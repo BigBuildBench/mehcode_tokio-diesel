@@ -1,0 +1,16 @@
+[package]
+name = "tokio-diesel"
+version = "0.3.0"
+authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
+edition = "2018"
+description = "Integrate Diesel into Tokio cleanly and efficiently."
+repository = "https://github.com/mehcode/tokio-diesel"
+license = "MIT/Apache-2.0"
+categories = ["asynchronous", "database"]
+
+[dependencies]
+
+[dev-dependencies]
+diesel = { version = "1.4.4", default-features = false, features = ["postgres", "uuidv07"] }
+uuid = { version = "0.8.1", features = ["v4"] }
+tokio = { version = "1", default-features = false, features = ["full"] }
